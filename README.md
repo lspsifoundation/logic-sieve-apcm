@@ -1,29 +1,35 @@
-# Logic Sieve: APCM
+# Logic Sieve — Private Set Intersection
 
-Approximate Private Constraint Matching (APCM) is a cryptographic, developer-facing infrastructure tool designed for Solana.
+## Mission
+**Semantic consensus without data leakage.**
 
-The project provides a reusable primitive for fast and privacy-preserving constraint matching, enabling developers to evaluate rules, policies, and filters without revealing user queries or internal constraint sets.
+---
 
-## Status
-Grant application submitted to the Solana Foundation.  
-Prototype and benchmarks completed in Google Colab.  
-On-chain and WASM implementations are in progress.
+## Overview
+Logic Sieve is an infrastructure-level research project focused on privacy-preserving semantic matching primitives.
 
-## Architecture Overview
-- Off-chain computation: Rust (no_std) + WASM
-- Cryptography: Batch Oblivious Transfer (IKNP)
-- On-chain verification: Solana program (hash and commitment verification)
+The project explores Approximate Private Constraint Matching (APCM) as a core primitive for achieving semantic consensus without exposing underlying data, building on Private Set Intersection and related cryptographic techniques.  
+This work supports privacy-preserving collaboration in public digital infrastructure.
 
-## Benchmarks (Preliminary)
-- Average latency: <10 ms
-- Accuracy: >97%
-- Environment: Google Colab
+Design priorities are correctness, composability, and long-term architectural integrity, with explicit emphasis on auditability.
 
-## Open Source Model
-Selective open-source:
-- On-chain verifier and interfaces will be open-sourced
-- Performance-critical off-chain components may remain proprietary
+---
 
-## Contact
-Logic Sieve Foundation  
-lspsifoundation@gmail.com
+## Core Concepts
+- Approximate Private Constraint Matching (APCM)
+- Private Set Intersection (PSI)
+- Semantic constraint matching
+- Privacy-preserving computation
+- Deterministic and verifiable execution
+
+---
+
+## Technical Focus
+- Language: Rust
+- Targets: no-std, WebAssembly (Wasm)
+- Minimal trusted surface
+- Deterministic behavior by design (reproducible and review-friendly)
+
+---
+
+## Repository Structure
