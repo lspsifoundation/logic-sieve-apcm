@@ -1,35 +1,49 @@
-# Logic Sieve — Private Set Intersection
+# Logic Sieve / APCM Core
 
-## Mission
-**Semantic consensus without data leakage.**
+This repository contains the public research core of the Logic Sieve initiative.
 
----
-
-## Overview
-Logic Sieve is an infrastructure-level research project focused on privacy-preserving semantic matching primitives.
-
-The project explores Approximate Private Constraint Matching (APCM) as a core primitive for achieving semantic consensus without exposing underlying data, building on Private Set Intersection and related cryptographic techniques.  
-This work supports privacy-preserving collaboration in public digital infrastructure.
-
-Design priorities are correctness, composability, and long-term architectural integrity, with explicit emphasis on auditability.
+It is maintained strictly as a research artifact.
 
 ---
 
-## Core Concepts
-- Approximate Private Constraint Matching (APCM)
+## Scope
+
+The CORE includes:
+
+- Privacy-preserving semantic matching primitives
 - Private Set Intersection (PSI)
-- Semantic constraint matching
-- Privacy-preserving computation
-- Deterministic and verifiable execution
+- Deterministic cryptographic constructions
+- APCM (Asymmetric Private Constraint Matching) research
+- Rust-based reference implementations (`no_std`, WASM-ready)
+
+Application logic, deployment code, and operational infrastructure are intentionally excluded.
 
 ---
 
-## Technical Focus
-- Language: Rust
-- Targets: no-std, WebAssembly (Wasm)
-- Minimal trusted surface
-- Deterministic behavior by design (reproducible and review-friendly)
+## Status
+
+Active research.
+
+Interfaces, specifications, and implementations may change without notice.
+No stability or backward compatibility guarantees are provided.
 
 ---
 
-## Repository Structure
+## Licensing
+
+This repository is prepared for AGPLv3 licensing.
+
+License activation is conditional and may be triggered by:
+- External funding
+- Third-party integration
+- Commercial or derivative usage
+
+Until activation, the repository is provided as a public research reference.
+
+---
+
+## Disclaimer
+
+This code is provided for research and evaluation purposes only.
+
+It is not a product, service, or security guarantee.
