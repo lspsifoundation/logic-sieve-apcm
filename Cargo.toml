@@ -1,0 +1,16 @@
+[package]
+name = "logic-sieve-apcm"
+version = "0.1.0"
+edition = "2021"
+
+description = "Research core for privacy-preserving semantic matching (APCM, PSI)"
+license = "AGPL-3.0-or-later"
+repository = "https://github.com/Ispisfoundation/logic-sieve-apcm"
+
+[lib]
+crate-type = ["rlib"]
+
+[features]
+default = []
+
+[dependencies]
