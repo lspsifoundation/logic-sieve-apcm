@@ -31,12 +31,9 @@ No stability or backward compatibility guarantees are provided.
 
 ## Licensing
 
-This repository is prepared for AGPLv3 licensing.
+This repository is licensed under the Apache License, Version 2.0.
 
-License activation is conditional and may be triggered by:
-- External funding
-- Third-party integration
-- Commercial or derivative usage
+The license applies to the repository in its current research-only form.
 
 Until activation, the repository is provided as a public research reference.
 
