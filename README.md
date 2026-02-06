@@ -1,46 +1,48 @@
-# Logic Sieve / APCM Core
+# LS_APCM — Logic Sieve: Approximate Private Constraint Matching
 
-This repository contains the public research core of the Logic Sieve initiative.
+LS_APCM is an early-stage research project focused on the problem of privacy-preserving logical compatibility checking between documents, actions, and formalized constraints, without revealing the underlying data.
 
-It is maintained strictly as a research artifact.
+The project explores whether logical verification can be reduced to deterministic, reproducible, and cryptographically protected operations over fixed-size representations, rather than relying on plaintext interpretation or trusted execution environments.
 
----
+## Motivation
 
-## Scope
+Modern automated systems — including AI governance pipelines, compliance workflows, and distributed coordination protocols — operate under multiple overlapping constraints such as policies, regulations, and contractual rules.
 
-The CORE includes:
+In practice, these constraints are often:
+- confidential,
+- distributed across independent parties,
+- expressed in heterogeneous natural language,
+- required to be checked with low latency.
 
-- Privacy-preserving semantic matching primitives
-- Private Set Intersection (PSI)
-- Deterministic cryptographic constructions
-- APCM (Asymmetric Private Constraint Matching) research
-- Rust-based reference implementations (`no_std`, WASM-ready)
+Existing approaches typically introduce strong trust assumptions, high computational cost, or unacceptable information leakage.
 
-Application logic, deployment code, and operational infrastructure are intentionally excluded.
+## Research Direction
 
----
+LS_APCM investigates an alternative formulation:
 
-## Status
+- inputs are deterministically canonicalized,
+- canonical forms are mapped to fixed-size binary sketches,
+- compatibility is evaluated through privacy-preserving bitwise operations,
+- no plaintext data is revealed during verification.
 
-Active research.
+The system does not attempt semantic interpretation or inference.  
+It treats logical verification as an approximate constraint matching problem under strict privacy and determinism requirements.
 
-Interfaces, specifications, and implementations may change without notice.
-No stability or backward compatibility guarantees are provided.
+## Project Status
 
----
+This repository represents a **conceptual and exploratory stage** of the project.
 
-## Licensing
+- There is no production implementation.
+- The focus is on formal problem definition, architectural constraints, and feasibility analysis.
+- Security assumptions are intentionally limited (e.g., semi-honest adversary model).
 
-This repository is licensed under the Apache License, Version 2.0.
+## Purpose
 
-The license applies to the repository in its current research-only form.
+The repository exists to:
+- fix the existence of the project and its core ideas,
+- provide a stable reference for discussion,
+- enable technical feedback before implementation decisions are made.
 
-Until activation, the repository is provided as a public research reference.
+## Feedback
 
----
-
-## Disclaimer
-
-This code is provided for research and evaluation purposes only.
-
-It is not a product, service, or security guarantee.
+Technical critique, discussion of assumptions, and analysis of potential weaknesses are welcome.
